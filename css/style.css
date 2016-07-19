@@ -1,0 +1,265 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.container {
+	margin: 0;	
+}
+
+.name {
+	font-size: 1.25em;
+	margin: 0;
+}
+
+.main-nav {
+	margin-top: 5px;
+}
+
+
+.name,
+.main-nav a {
+	display: block;
+	text-align: center;
+	padding: 10px 15px;
+
+}
+
+.main-nav a {
+	font-size: .95em;
+	background-color: #fff;
+}
+
+.main-nav li {
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+}
+
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	background: #f8f8ff;
+}
+
+.banner {
+	background: #f8f8ff;
+	padding: 3.2em 0;
+	margin-bottom: 60px;
+	text-align: center;
+}
+
+.logo {
+	width: 80%;
+}
+
+
+
+/* ---- Portfolio ------ */
+
+.portfolio h3, h4, p{
+	text-align: center;
+}
+
+.portfolio h4{
+	margin-top: 50px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+.portfolio li {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+
+
+/* ---- Contacts details ------ */
+
+
+.contact {
+	text-align: center;
+	background: #f8f8ff;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	border-bottom: solid 1px #778899;
+}
+
+.contact li{
+	padding-top: 1em;
+	display: block;
+}
+
+.contact a {
+	padding-left: 5px;
+}
+
+.contact p {
+	text-align: center;
+}
+
+/* ---- Footer ----*/
+
+.footer-name {
+	float: left;
+}
+
+.footer-nav-1 {
+	display: none;
+}
+
+.back {
+	float: right;
+	text-transform: uppercase;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+	.main-nav li{
+		display: inline-block;
+	}
+
+	.main-nav {
+		text-align: center;
+	}
+
+	.main-header,
+	.banner {
+		background: #fff;
+	}
+
+	.banner {
+		padding-top: 2em;
+		margin-bottom: 0;
+	}
+
+
+	.logo {
+		float: right;
+		width: 40%;
+	}
+
+	.text {
+		float: left;
+		width: 50%;
+	}
+
+	.gallery li {
+		float: left;
+  		width: 48%;
+  		margin: 1%;
+	}
+
+	.back {
+		display: none;
+	}
+
+	.footer-nav-1 {
+		display: inline;
+	}
+
+	.footer-nav-1 li {
+		display: inline;
+		float: right;
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+
+	.footer-nav-1 li a {
+		font-size: .95em;
+	}
+
+
+
+
+/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+
+@media (min-width: 1024px) {
+
+
+	.name {
+		float: left;
+		font-size: 2em;
+	}
+
+	.main-nav{
+		float: right;
+	}
+
+	.main-header,
+	.main-nav a,
+	.banner {
+		background: #f8f8ff;
+	}
+
+	.text {
+		font-size: 1.5em;
+	}
+
+	.gallery li {
+		width: 30%;
+		margin: 1%;
+	}
+
+	.contact p {
+		font-size: 1em;
+	}
+
+	.contact li {
+		font-size: 1em;
+	}
+
+}
+
+
+/*End*/
+
